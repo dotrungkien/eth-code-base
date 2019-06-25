@@ -1,0 +1,9 @@
+{
+  "name": "eth-code-base",
+  "version": "1.0.0",
+  "description": "build code base for every ethereum dapp project",
+  "repository": "git@github.com:dotrungkien/eth-code-base.git",
+  "author": "Do Trung Kien <trungkien.keio@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
