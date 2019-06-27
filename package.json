@@ -5,5 +5,9 @@
   "repository": "git@github.com:dotrungkien/eth-code-base.git",
   "author": "Do Trung Kien <trungkien.keio@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "ganache-cli": "^6.4.4",
+    "openzeppelin-solidity": "^2.3.0"
+  }
 }
