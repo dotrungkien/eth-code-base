@@ -18,6 +18,6 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "openzeppelin-test-helpers": "^0.4.0",
-    "solidity-coverage": "github:rotcivegaf/solidity-coverage#5875f5b7bc74d447f3312c9c0e9fc7814b482477"
+    "solidity-coverage": "^0.5.11"
   }
 }
