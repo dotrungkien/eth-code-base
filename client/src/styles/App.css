@@ -11,3 +11,9 @@
 .content_ERC {
   margin: 0 50px;
 }
+
+.section {
+  text-align: left;
+  max-width: 720px;
+  margin: 4rem auto auto;
+}

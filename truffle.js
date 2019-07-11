@@ -1,4 +1,8 @@
+const path = require('path');
+
 module.exports = {
+  contracts_build_directory: path.join(__dirname, 'client/src/contracts'),
+
   networks: {
     development: {
       host: '127.0.0.1',
@@ -15,8 +19,8 @@ module.exports = {
       network_id: '*',
       port: 8555,
       gas: 0xfffffffffff,
-      gasPrice: 0x01,
-    },
+      gasPrice: 0x01
+    }
   },
 
   mocha: {

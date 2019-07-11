@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Layout } from 'antd';
+import ActiveAccount from './ActiveAccount';
 import Navbar from './Navbar';
 import '../styles/App.css';
 
@@ -19,7 +20,7 @@ class Erc721 extends Component {
       <div>
         <Navbar page={'2'} />
         <Content>
-          <div>ERC_20</div>
+          <ActiveAccount />
         </Content>
       </div>
     );
