@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+/src/contracts
+/src/ERC20_Contract_address.json
 
 # testing
 /coverage
