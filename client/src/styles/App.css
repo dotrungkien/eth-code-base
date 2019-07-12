@@ -17,3 +17,7 @@
   max-width: 720px;
   margin: 4rem auto auto;
 }
+
+form.Item > input {
+  color: rgba(0, 0, 0, 0.25);
+}

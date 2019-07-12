@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import getWeb3 from '@dotrungkien/get-web3';
 
-import Erc20 from './components/Erc20';
+import Erc20 from './components/Erc20_UI/Erc20';
 import Erc721 from './components/Erc721';
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
     };
   }
 
-  async componentWillMount() {
+  async componentDidMount() {
     this.setState({ web3: await getWeb3() });
   }
   render() {

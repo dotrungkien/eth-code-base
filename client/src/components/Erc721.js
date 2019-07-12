@@ -10,9 +10,7 @@ class Erc721 extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      web3: props.web3
-    };
+    this.state = {};
   }
 
   render() {
@@ -20,7 +18,7 @@ class Erc721 extends Component {
       <div>
         <Navbar page={'2'} />
         <Content>
-          <ActiveAccount />
+          <ActiveAccount web3={this.props.web3} />
         </Content>
       </div>
     );

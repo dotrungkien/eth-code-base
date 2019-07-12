@@ -9,21 +9,23 @@ class ActiveAccount extends Component {
     super(props);
 
     this.state = {
-      web3: props.web3,
       account: '',
       balance: ''
     };
   }
 
   async componentDidMount() {
-    await this.state.web3.eth.getCoinbase().then((account) => {
+    await this.props.web3.eth.getCoinbase().then((account) => {
       this.setState({ account });
     });
 
-    await this.state.web3.eth.getBalance(this.state.account).then((balance) => {
-      balance = this.state.web3.utils.fromWei(balance);
-      this.setState({ balance });
-    });
+    // interval
+    this.interval = setInterval(async () => {
+      await this.props.web3.eth.getBalance(this.state.account).then((balance) => {
+        balance = this.props.web3.utils.fromWei(balance);
+        this.setState({ balance });
+      });
+    }, 3000);
   }
 
   render() {
