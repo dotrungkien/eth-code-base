@@ -6,6 +6,7 @@
 .pnp.js
 /src/contracts
 /src/ERC20_Contract_address.json
+/src/ERC721_Contract_address.json
 
 # testing
 /coverage
