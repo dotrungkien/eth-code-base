@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import getWeb3 from '@dotrungkien/get-web3';
 
 import Erc20 from './components/Erc20_UI/Erc20';
-import Erc721 from './components/Erc721';
+import Erc721 from './components/Erc721_UI/Erc721';
 
 class App extends Component {
   constructor(props) {
