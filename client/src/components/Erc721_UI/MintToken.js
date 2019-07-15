@@ -2,14 +2,6 @@ import React, { Component } from 'react';
 import { Form, Icon, Input, Button } from 'antd';
 
 class MintToken extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      web3: props.web3
-    };
-  }
-
   async componentDidMount() {
     // To disabled submit button at the beginning.
     this.props.form.validateFields();

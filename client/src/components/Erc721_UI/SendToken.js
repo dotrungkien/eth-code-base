@@ -3,14 +3,6 @@ import { Form, Icon, Input, Button } from 'antd';
 import '../../styles/App.css';
 
 class SendToken extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      web3: props.web3
-    };
-  }
-
   async componentDidMount() {
     // To disabled submit button at the beginning.
     this.props.form.validateFields();
